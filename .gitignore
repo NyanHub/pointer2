@@ -1,33 +1,41 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+// ¡¡¡ANTES DE HACER NADA CON EL ORDENADOR: PLANTEAR PROBLEMA, PENSAR EN SOLUCIÓN Y ESCRIBIR CÓDIGO EN HOJA DE PAPEL!!!
 
-# Precompiled Headers
-*.gch
-*.pch
+// ¡¡¡LA FASE DE DISEÑO EN PAPEL ES MUY MUY MUY MUY MUY I-M-P-O-R-T-A-N-T-E !!!
+#include <stdio.h>
+#include <stdlib.h>
+/*//PRUEBA SENCILLA PUNTERO
+void main ()
+{
+	int *p;
+	int num;
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
+	printf("Escriba un numero:\n");
+	scanf("%d",&num);
 
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
+	p=&num; //el puntero "p" ahora apunta a donde está la variable "num"
 
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
+	printf("El numero esta en la posicion de memoria %d\n",p);//imprime la dirección a la que apunta "p"
+	printf("y es: %d\n",*p);//imprime LO QUE HAY en la dirección a la que apunta "p"
 
-# Debug files
-*.dSYM/
-*.su
+	system("PAUSE");
+}
+*/
+/*//MODIFICAR LO QUE HAY EN "num" SIN USAR "num" DIRECTAMENTE
+void main ()
+{
+	int *p;
+	int num,sum;
+
+	printf("Escriba un numero:\n");
+	scanf("%d",&num);
+	printf("Escriba un numero a sumarle al anterior:\n");
+	scanf("%d",&sum);
+
+	p=&num; //el puntero "p" ahora apunta a donde está la variable "num"
+	*p=(*p)+sum;//suma lo que hay donde apunta "p" más "sum"
+	printf("El numero esta en la posicion de memoria %d\n",p);//imprime la dirección a la que apunta "p"
+	printf("y el resultado de la suma es: %d\n",*p);//imprime LO QUE HAY en la dirección a la que apunta "p"
+
+	system("PAUSE");
+}
+*/
